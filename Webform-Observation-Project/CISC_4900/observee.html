@@ -1,0 +1,61 @@
+
+<html>
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Observee Form</title>
+    <div>
+        <h1> Observee Form</h1>
+    </div>
+</head>
+<body>
+    <h3>Fill out your information below</h3>
+
+    <div>
+      <form action="/action_page.php">
+        <label for="desc">Description</label>
+        <input type="text" id="desc" name="Description" placeholder="Please describe here.." name="desc" required>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Observers name" name="fname" required>
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Observers last name.." name="lname" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="mail" name="email" placeholder="Observers email.." name="email" required>
+        
+        <label for="phone">Phone Number </label>
+        <input type="tel" id="phone" name="phone no" placeholder="(123)555-5555" tabindex="3" name="phone" required>
+
+    
+        <label for="cq">Comments/Questions</label>
+        <input type="text" id="cq" name="cq" placeholder="Any concern?" name="comments" required>
+
+        <label for="myfile">Upload your supplemental class material!</label>
+  <input type="file" id="myfile" name="myfile" required><br><br>
+ 
+
+      
+        <input type="submit" value="Submit" onclick="msg()">
+        
+      </form>
+      <script>
+        function msg() {
+          alert("Your observer will email you his/her comments");
+        }
+    </script>
+    </div>
+    
+
+
+</body>
+
+
+
+
+
+
+
+</html>
